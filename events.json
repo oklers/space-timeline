@@ -1,0 +1,69 @@
+
+[
+  {
+    "ru": {
+      "title": "1961 — Первый полёт человека в космос",
+      "description": "Юрий Гагарин совершил орбитальный полёт на корабле 'Восток-1'."
+    },
+    "en": {
+      "title": "1961 — First Human Spaceflight",
+      "description": "Yuri Gagarin completed an orbital flight on the Vostok-1 spacecraft."
+    },
+    "media": "https://upload.wikimedia.org/wikipedia/commons/2/26/Yuri_Gagarin_1961.jpg"
+  },
+  {
+    "ru": {
+      "title": "1969 — Первые люди на Луне",
+      "description": "Армстронг и Олдрин высадились на Луну в рамках миссии Apollo 11."
+    },
+    "en": {
+      "title": "1969 — First Humans on the Moon",
+      "description": "Armstrong and Aldrin landed on the Moon during Apollo 11 mission."
+    },
+    "media": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Apollo_11_Lunar_Module_on_the_Moon.jpg"
+  },
+  {
+    "ru": {
+      "title": "1971 — Первая космическая станция 'Салют-1'",
+      "description": "СССР запускает первую в мире орбитальную станцию 'Салют-1'."
+    },
+    "en": {
+      "title": "1971 — First Space Station 'Salyut-1'",
+      "description": "USSR launches the world's first space station 'Salyut-1'."
+    },
+    "media": "https://upload.wikimedia.org/wikipedia/commons/2/24/Salyut_1.jpg"
+  },
+  {
+    "ru": {
+      "title": "1986 — Запуск орбитальной станции 'Мир'",
+      "description": "Международная долгосрочная станция, прослужившая до 2001 года."
+    },
+    "en": {
+      "title": "1986 — Launch of 'Mir' Space Station",
+      "description": "A modular space station operated until 2001."
+    },
+    "media": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Mir_space_station.jpg"
+  },
+  {
+    "ru": {
+      "title": "2000 — Начало работы МКС",
+      "description": "Международная космическая станция приняла первых постоянных обитателей."
+    },
+    "en": {
+      "title": "2000 — ISS Permanent Crew Begins",
+      "description": "First long-duration crew takes residence aboard the International Space Station."
+    },
+    "media": "https://upload.wikimedia.org/wikipedia/commons/9/96/ISS_with_Endeavour.jpg"
+  },
+  {
+    "ru": {
+      "title": "2021 — Первый гражданский полёт в космос (Inspiration4)",
+      "description": "Частная миссия SpaceX с полностью гражданским экипажем."
+    },
+    "en": {
+      "title": "2021 — First All-Civilian Spaceflight (Inspiration4)",
+      "description": "SpaceX mission with the first all-civilian crew."
+    },
+    "media": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Inspiration4_crew.jpg"
+  }
+]
