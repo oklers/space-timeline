@@ -1,367 +1,215 @@
-const questions = [
-    {
-        question: "How many days makes a week ?",
-        optionA: "10 days",
-        optionB: "14 days",
-        optionC: "5 days",
-        optionD: "7 days",
-        correctOption: "optionD"
-    },
+// select all elements
+const start = document.getElementById("start");
+const quiz = document.getElementById("quiz");
+const question = document.getElementById("question");
+const qImg = document.getElementById("qImg");
+const choiceA = document.getElementById("A");
+const choiceB = document.getElementById("B");
+const choiceC = document.getElementById("C");
+const choiceD = document.getElementById("D");
+const counter = document.getElementById("counter");
+const timeGauge = document.getElementById("timeGauge");
+const progress = document.getElementById("progress");
+const scoreDiv = document.getElementById("scoreContainer");
 
+// create our questions
+let questions = [
     {
-        question: "How many players are allowed on a soccer pitch ?",
-        optionA: "10 players",
-        optionB: "11 players",
-        optionC: "9 players",
-        optionD: "12 players",
-        correctOption: "optionB"
-    },
+        question : "which equation has no solution?",
+        imgSrc : "img/html.png",
+        choiceA : "A)-8x+2=-8x-4 ",
+        choiceB : "B)12+5x=5x+12",
+        choiceC : "C)6x+9=6x+9",
+        choiceD : "D)15-x=-x+15",
+        correct : "A"
 
-    {
-        question: "Who was the first President of USA ?",
-        optionA: "Donald Trump",
-        optionB: "Barack Obama",
-        optionC: "Abraham Lincoln",
-        optionD: "George Washington",
-        correctOption: "optionD"
-    },
-
-    {
-        question: "30 days has ______ ?",
-        optionA: "January",
-        optionB: "December",
-        optionC: "June",
-        optionD: "August",
-        correctOption: "optionC"
-    },
-
-    {
-        question: "How manay hours can be found in a day ?",
-        optionA: "30 hours",
-        optionB: "38 hours",
-        optionC: "48 hours",
-        optionD: "24 hours",
-        correctOption: "optionD"
-    },
-
-    {
-        question: "Which is the longest river in the world ?",
-        optionA: "River Nile",
-        optionB: "Long River",
-        optionC: "River Niger",
-        optionD: "Lake Chad",
-        correctOption: "optionA"
-    },
-
-    {
-        question: "_____ is the hottest Continent on Earth ?",
-        optionA: "Oceania",
-        optionB: "Antarctica",
-        optionC: "Africa",
-        optionD: "North America",
-        correctOption: "optionC"
-    },
-
-    {
-        question: "Which country is the largest in the world ?",
-        optionA: "Russia",
-        optionB: "Canada",
-        optionC: "Africa",
-        optionD: "Egypt",
-        correctOption: "optionA"
-    },
-
-    {
-        question: "Which of these numbers is an odd number ?",
-        optionA: "Ten",
-        optionB: "Twelve",
-        optionC: "Eight",
-        optionD: "Eleven",
-        correctOption: "optionD"
-    },
-
-    {
-        question: `"You Can't see me" is a popular saying by`,
-        optionA: "Eminem",
-        optionB: "Bill Gates",
-        optionC: "Chris Brown",
-        optionD: "John Cena",
-        correctOption: "optionD"
-    },
-
-    {
-        question: "Where is the world tallest building located ?",
-        optionA: "Africa",
-        optionB: "California",
-        optionC: "Dubai",
-        optionD: "Italy",
-        correctOption: "optionC"
-    },
-
-    {
-        question: "The longest river in the United Kingdom is ?",
-        optionA: "River Severn",
-        optionB: "River Mersey",
-        optionC: "River Trent",
-        optionD: "River Tweed",
-        correctOption: "optionA"
-    },
-
-
-    {
-        question: "How many permanent teeth does a dog have ?",
-        optionA: "38",
-        optionB: "42",
-        optionC: "40",
-        optionD: "36",
-        correctOption: "optionB"
-    },
-
-    {
-        question: "Which national team won the football World cup in 2018 ?",
-        optionA: "England",
-        optionB: "Brazil",
-        optionC: "Germany",
-        optionD: "France",
-        correctOption: "optionD"
-    },
-
-    {
-        question: "Which US state was Donald Trump Born ?",
-        optionA: "New York",
-        optionB: "California",
-        optionC: "New Jersey",
-        optionD: "Los Angeles",
-        correctOption: "optionA"
-    },
-
-    {
-        question: "How man states does Nigeria have ?",
-        optionA: "24",
-        optionB: "30",
-        optionC: "36",
-        optionD: "37",
-        correctOption: "optionC"
-    },
-
-    {
-        question: "____ is the capital of Nigeria ?",
-        optionA: "Abuja",
-        optionB: "Lagos",
-        optionC: "Calabar",
-        optionD: "Kano",
-        correctOption: "optionA"
-    },
-
-    {
-        question: "Los Angeles is also known as ?",
-        optionA: "Angels City",
-        optionB: "Shining city",
-        optionC: "City of Angels",
-        optionD: "Lost Angels",
-        correctOption: "optionC"
-    },
-
-    {
-        question: "What is the capital of Germany ?",
-        optionA: "Georgia",
-        optionB: "Missouri",
-        optionC: "Oklahoma",
-        optionD: "Berlin",
-        correctOption: "optionD"
-    },
-
-    {
-        question: "How many sides does an hexagon have ?",
-        optionA: "Six",
-        optionB: "Sevene",
-        optionC: "Four",
-        optionD: "Five",
-        correctOption: "optionA"
-    },
-
-    {
-        question: "How many planets are currently in the solar system ?",
-        optionA: "Eleven",
-        optionB: "Seven",
-        optionC: "Nine",
-        optionD: "Eight",
-        correctOption: "optionD"
-    },
-
-    {
-        question: "Which Planet is the hottest ?",
-        optionA: "Jupitar",
-        optionB: "Mercury",
-        optionC: "Earth",
-        optionD: "Venus",
-        correctOption: "optionB"
-    },
-
-    {
-        question: "where is the smallest bone in human body located?",
-        optionA: "Toes",
-        optionB: "Ears",
-        optionC: "Fingers",
-        optionD: "Nose",
-        correctOption: "optionB"
-    },
-
-    {
-        question: "How many hearts does an Octopus have ?",
-        optionA: "One",
-        optionB: "Two",
-        optionC: "Three",
-        optionD: "Four",
-        correctOption: "optionC"
-    },
-
-    {
-        question: "How many teeth does an adult human have ?",
-        optionA: "28",
-        optionB: "30",
-        optionC: "32",
-        optionD: "36",
-        correctOption: "optionC"
+    },{
+        question : "what is the solution to : 7+ ²ˣ⁄₅ =13?",
+        imgSrc : "img/css.png",
+        choiceA : "A)30",
+        choiceB : "B)15",
+        choiceC : "C)45",
+        choiceD : "D)6",
+        correct : "B"
+    },{
+        question : "what is the solution for -x+72=-9x?",
+        imgSrc : "img/css.png",
+        choiceA : "A)-9",
+        choiceB : "B)7.2",
+        choiceC : "C)-7.2",
+        choiceD : "D)9",
+        correct : "A"
+      },{
+        question : "simplify 5(x-12)+15(3+x)",
+        imgSrc : "img/css.png",
+        choiceA : "A)6x+15",
+        choiceB : "B)20x-105",
+        choiceC : "C)20x-15",
+        choiceD : "D)6x-12",
+        correct : "C"
+      },{
+        question : "Which of the following is equivalent to 5(z+3)-4(1+p)",
+        imgSrc : "img/css.png",
+        choiceA : "A)5z-4p",
+        choiceB : "B)5z+19+4",
+        choiceC : "C)11zp",
+        choiceD : "D)5z+11-4p",
+        correct : "D"
+      },{
+        question:  "solve 1.5x-2<=10",
+        imgSrc : "img/css.png",
+        choiceA : "A)x<=8",
+        choiceB : "B)x>=8",
+        choiceC : "C)x<=5⅓",
+        choiceD : "D) x>=5.3",
+        correct : "A"
+      },{
+        question:  "what are the solutions to 3(x+5)<=3x+20",
+        imgSrc : "img/css.png",
+        choiceA : "A)x<=0",
+        choiceB : "B)x>=15",
+        choiceC : "C)no solution",
+        choiceD : "D)all real numbers",
+        correct : "D"
+      },{
+        question:  "which of the following is the most precise?",
+        imgSrc : "img/css.png",
+        choiceA : "A)4.458in",
+        choiceB : "B)4.46in",
+        choiceC : "C)4.5in",
+        choiceD : "D)5in",
+        correct : "A"
+      },{
+        question:  "?which of the following expressions has two terms and a coefficient of 6?",
+        imgSrc : "img/css.png",
+        choiceA : "A)6y^2-2x+10",
+        choiceB : "B)6y^2-18",
+        choiceC : "C)-y^2+6",
+        choiceD : "D)6-12y",
+        correct : "B"
+      },{
+        question:  "What is the product of 75.0 feet and 2.05 feet written with the correct number of significant digets?",
+        imgSrc : "img/css.png",
+        choiceA : "A)153.75 ft^2",
+        choiceB : "B)153.8 ft^2",
+        choiceC : "C)154 ft^2",
+        choiceD : "D)150 ft^2",
+        correct : "C"
     }
-]
+];
 
+// create some variables
 
-let shuffledQuestions = [] 
+const lastQuestion = questions.length - 1;
+let runningQuestion = 0;
+let count = 0;
+const questionTime = 300; // 5min
+const gaugeWidth = 150; // 150px
+const gaugeUnit = gaugeWidth / questionTime;
+let TIMER;
+let score = 0;
 
-function handleQuestions() { 
+// render a question
+function renderQuestion(){
+    let q = questions[runningQuestion];
 
-    while (shuffledQuestions.length <= 9) {
-        const random = questions[Math.floor(Math.random() * questions.length)]
-        if (!shuffledQuestions.includes(random)) {
-            shuffledQuestions.push(random)
+    question.innerHTML = "<p>"+ q.question +"</p>";
+    qImg.innerHTML = "<img src="+ q.imgSrc +">";
+    choiceA.innerHTML = q.choiceA;
+    choiceB.innerHTML = q.choiceB;
+    choiceC.innerHTML = q.choiceC;
+    choiceD.innerHTML = q.choiceD;
+}
+
+start.addEventListener("click",startQuiz);
+
+// start quiz
+function startQuiz(){
+    start.style.display = "none";
+    renderQuestion();
+    quiz.style.display = "block";
+    renderProgress();
+    renderCounter();
+    TIMER = setInterval(renderCounter,1000); // 1000ms = 1s
+}
+
+// render progress
+function renderProgress(){
+    for(let qIndex = 0; qIndex <= lastQuestion; qIndex++){
+        progress.innerHTML += "<div class='prog' id="+ qIndex +"></div>";
+    }
+}
+
+// counter render
+
+function renderCounter(){
+    if(count <= questionTime){
+        counter.innerHTML = count;
+        timeGauge.style.width = count * gaugeUnit + "px";
+        count++
+    }else{
+        count = 0;
+        // change progress color to red
+        answerIsWrong();
+        if(runningQuestion < lastQuestion){
+            runningQuestion++;
+            renderQuestion();
+        }else{
+            // end the quiz and show the score
+            clearInterval(TIMER);
+            scoreRender();
         }
     }
 }
 
-let questionNumber = 1 
-let playerScore = 0  
-let wrongAttempt = 0 
-let indexNumber = 0 
+// checkAnwer
 
-function NextQuestion(index) {
-    handleQuestions()
-    const currentQuestion = shuffledQuestions[index]
-    document.getElementById("question-number").innerHTML = questionNumber
-    document.getElementById("player-score").innerHTML = playerScore
-    document.getElementById("display-question").innerHTML = currentQuestion.question;
-    document.getElementById("option-one-label").innerHTML = currentQuestion.optionA;
-    document.getElementById("option-two-label").innerHTML = currentQuestion.optionB;
-    document.getElementById("option-three-label").innerHTML = currentQuestion.optionC;
-    document.getElementById("option-four-label").innerHTML = currentQuestion.optionD;
-
-}
-
-
-function checkForAnswer() {
-    const currentQuestion = shuffledQuestions[indexNumber] 
-    const currentQuestionAnswer = currentQuestion.correctOption 
-    const options = document.getElementsByName("option"); 
-    let correctOption = null
-
-    options.forEach((option) => {
-        if (option.value === currentQuestionAnswer) {
-            correctOption = option.labels[0].id
-        }
-    })
-
-    if (options[0].checked === false && options[1].checked === false && options[2].checked === false && options[3].checked == false) {
-        document.getElementById('option-modal').style.display = "flex"
+function checkAnswer(answer){
+    if( answer == questions[runningQuestion].correct){
+        // answer is correct
+        score++;
+        // change progress color to green
+        answerIsCorrect();
+    }else{
+        // answer is wrong
+        // change progress color to red
+        answerIsWrong();
     }
-
-    options.forEach((option) => {
-        if (option.checked === true && option.value === currentQuestionAnswer) {
-            document.getElementById(correctOption).style.backgroundColor = "green"
-            playerScore++
-            indexNumber++
-            setTimeout(() => {
-                questionNumber++
-            }, 1000)
-        }
-
-        else if (option.checked && option.value !== currentQuestionAnswer) {
-            const wrongLabelId = option.labels[0].id
-            document.getElementById(wrongLabelId).style.backgroundColor = "red"
-            document.getElementById(correctOption).style.backgroundColor = "green"
-            wrongAttempt++
-            indexNumber++
-            setTimeout(() => {
-                questionNumber++
-            }, 1000)
-        }
-    })
-}
-
-function handleNextQuestion() {
-    checkForAnswer() 
-    unCheckRadioButtons()
-    setTimeout(() => {
-        if (indexNumber <= 9) {
-            NextQuestion(indexNumber)
-        }
-        else {
-            handleEndGame()
-        }
-        resetOptionBackground()
-    }, 1000);
-}
-
-function resetOptionBackground() {
-    const options = document.getElementsByName("option");
-    options.forEach((option) => {
-        document.getElementById(option.labels[0].id).style.backgroundColor = ""
-    })
-}
-
-function unCheckRadioButtons() {
-    const options = document.getElementsByName("option");
-    for (let i = 0; i < options.length; i++) {
-        options[i].checked = false;
+    count = 0;
+    if(runningQuestion < lastQuestion){
+        runningQuestion++;
+        renderQuestion();
+    }else{
+        // end the quiz and show the score
+        clearInterval(TIMER);
+        scoreRender();
     }
 }
 
-function handleEndGame() {
-    let remark = null
-    let remarkColor = null
-
-    if (playerScore <= 3) {
-        remark = "Bad Grades, Keep Practicing."
-        remarkColor = "red"
-    }
-    else if (playerScore >= 4 && playerScore < 7) {
-        remark = "Average Grades, You can do better."
-        remarkColor = "orange"
-    }
-    else if (playerScore >= 7) {
-        remark = "Excellent, Keep the good work going."
-        remarkColor = "green"
-    }
-    const playerGrade = (playerScore / 10) * 100
-
-    document.getElementById('remarks').innerHTML = remark
-    document.getElementById('remarks').style.color = remarkColor
-    document.getElementById('grade-percentage').innerHTML = playerGrade
-    document.getElementById('wrong-answers').innerHTML = wrongAttempt
-    document.getElementById('right-answers').innerHTML = playerScore
-    document.getElementById('score-modal').style.display = "flex"
-
+// answer is correct
+function answerIsCorrect(){
+    document.getElementById(runningQuestion).style.backgroundColor = "#0f0";
 }
 
-function closeScoreModal() {
-    questionNumber = 1
-    playerScore = 0
-    wrongAttempt = 0
-    indexNumber = 0
-    shuffledQuestions = []
-    NextQuestion(indexNumber)
-    document.getElementById('score-modal').style.display = "none"
+// answer is Wrong
+function answerIsWrong(){
+    document.getElementById(runningQuestion).style.backgroundColor = "#f00";
 }
 
-function closeOptionModal() {
-    document.getElementById('option-modal').style.display = "none"
+// score render
+function scoreRender(){
+    scoreDiv.style.display = "block";
+
+    // calculate the amount of question percent answered by the user
+    const scorePerCent = Math.round(100 * score/questions.length);
+
+    // choose the image based on the scorePerCent
+    let img = (scorePerCent >= 80) ? "img/5.png" :
+              (scorePerCent >= 60) ? "img/4.png" :
+              (scorePerCent >= 40) ? "img/3.png" :
+              (scorePerCent >= 20) ? "img/2.png" :
+              "img/1.png";
+
+    scoreDiv.innerHTML = "<img src="+ img +">";
+    scoreDiv.innerHTML += "<p>"+ scorePerCent +"%</p>";
 }
