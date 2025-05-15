@@ -15,86 +15,86 @@ const scoreDiv = document.getElementById("scoreContainer");
 // create our questions
 let questions = [
     {
-        question : "which equation has no solution?",
+        question : "В каком году был заложен первый камень в ознаменование строительства города Ленинска?",
         imgSrc : "img/html.png",
-        choiceA : "A)-8x+2=-8x-4 ",
-        choiceB : "B)12+5x=5x+12",
-        choiceC : "C)6x+9=6x+9",
-        choiceD : "D)15-x=-x+15",
-        correct : "A"
+        choiceA : "A)1950",
+        choiceB : "B)1955",
+        choiceC : "C)1960",
+        choiceD : "D)1965",
+        correct : "B"
 
     },{
-        question : "what is the solution to : 7+ ²ˣ⁄₅ =13?",
+        question : "Кто родился 6 мая 1966 года?",
         imgSrc : "img/css.png",
-        choiceA : "A)30",
-        choiceB : "B)15",
-        choiceC : "C)45",
-        choiceD : "D)6",
-        correct : "B"
+        choiceA : "A)Скворцов Александр Александрович",
+        choiceB : "B)Иванов Сергей Петрович",
+        choiceC : "C)Петрова Анна Викторовна",
+        choiceD : "D)Смирнов Дмитрий Андреевич",
+        correct : "A"
     },{
-        question : "what is the solution for -x+72=-9x?",
+        question : "В каком году состоялся четвертый регулярный набор космонавтов в отряд Министерства обороны СССР?",
         imgSrc : "img/css.png",
-        choiceA : "A)-9",
-        choiceB : "B)7.2",
-        choiceC : "C)-7.2",
-        choiceD : "D)9",
-        correct : "A"
-      },{
-        question : "simplify 5(x-12)+15(3+x)",
-        imgSrc : "img/css.png",
-        choiceA : "A)6x+15",
-        choiceB : "B)20x-105",
-        choiceC : "C)20x-15",
-        choiceD : "D)6x-12",
-        correct : "C"
-      },{
-        question : "Which of the following is equivalent to 5(z+3)-4(1+p)",
-        imgSrc : "img/css.png",
-        choiceA : "A)5z-4p",
-        choiceB : "B)5z+19+4",
-        choiceC : "C)11zp",
-        choiceD : "D)5z+11-4p",
-        correct : "D"
-      },{
-        question:  "solve 1.5x-2<=10",
-        imgSrc : "img/css.png",
-        choiceA : "A)x<=8",
-        choiceB : "B)x>=8",
-        choiceC : "C)x<=5⅓",
-        choiceD : "D) x>=5.3",
-        correct : "A"
-      },{
-        question:  "what are the solutions to 3(x+5)<=3x+20",
-        imgSrc : "img/css.png",
-        choiceA : "A)x<=0",
-        choiceB : "B)x>=15",
-        choiceC : "C)no solution",
-        choiceD : "D)all real numbers",
-        correct : "D"
-      },{
-        question:  "which of the following is the most precise?",
-        imgSrc : "img/css.png",
-        choiceA : "A)4.458in",
-        choiceB : "B)4.46in",
-        choiceC : "C)4.5in",
-        choiceD : "D)5in",
-        correct : "A"
-      },{
-        question:  "?which of the following expressions has two terms and a coefficient of 6?",
-        imgSrc : "img/css.png",
-        choiceA : "A)6y^2-2x+10",
-        choiceB : "B)6y^2-18",
-        choiceC : "C)-y^2+6",
-        choiceD : "D)6-12y",
+        choiceA : "A)1965",
+        choiceB : "B)1967",
+        choiceC : "C)1969",
+        choiceD : "D)1971",
         correct : "B"
       },{
-        question:  "What is the product of 75.0 feet and 2.05 feet written with the correct number of significant digets?",
+        question : "Какой указ подписал президент РФ в 1992 году?",
         imgSrc : "img/css.png",
-        choiceA : "A)153.75 ft^2",
-        choiceB : "B)153.8 ft^2",
-        choiceC : "C)154 ft^2",
-        choiceD : "D)150 ft^2",
-        correct : "C"
+        choiceA : "A)О создании Военно-космических сил",
+        choiceB : "B)О закрытии космодрома",
+        choiceC : "C)О развитии науки",
+        choiceD : "D)О реализации программы по космическим исследованиям",
+        correct : "A"
+      },{
+        question : "Кто родился 9 мая 1949 года?",
+        imgSrc : "img/css.png",
+        choiceA : "A)Атьков Олег Юрьевич",
+        choiceB : "B)Гречко Георгий Михайлович",
+        choiceC : "C)Леонов Алексей Архипович",
+        choiceD : "D)Комаров Владимир Михайлович",
+        correct : "A"
+      },{
+        question:  "В каком году было подписано Соглашение между АН СССР и NASA?",
+        imgSrc : "img/css.png",
+        choiceA : "A)1975",
+        choiceB : "B)1977",
+        choiceC : "C)1979",
+        choiceD : "D)1981",
+        correct : "B"
+      },{
+        question:  "Кто родился 13 мая 1942 года?",
+        imgSrc : "img/css.png",
+        choiceA : "A)Джанибеков Владимир Александрович",
+        choiceB : "B)Попов Юрий Александрович",
+        choiceC : "C)Севастьянов Валерий Андреевич",
+        choiceD : "D)Волков Александр Александрович",
+        correct : "A"
+      },{
+        question:  "В каком году стартовал КК «Союз Т-5»?",
+        imgSrc : "img/css.png",
+        choiceA : "A)1980",
+        choiceB : "B)1982",
+        choiceC : "C)1984",
+        choiceD : "D)1986",
+        correct : "B"
+      },{
+        question:  "Какой экипаж стартовал на «Союз-40»?",
+        imgSrc : "img/css.png",
+        choiceA : "A)Попов и Прунариу",
+        choiceB : "B)Гречко и Непорашов",
+        choiceC : "C)Стрекалов и Крикалев",
+        choiceD : "D)Севастьянов и Волков",
+        correct : "A"
+      },{
+        question:  "Кто выполнил первый полёт на ракетном BИ-1?",
+        imgSrc : "img/css.png",
+        choiceA : "A)Г.Я. Бахчиванджи",
+        choiceB : "B)А.Н. Туполев",
+        choiceC : "C)Ю.А. Гагарин",
+        choiceD : "D)В.П. Севастьянов",
+        correct : "A"
     }
 ];
 
