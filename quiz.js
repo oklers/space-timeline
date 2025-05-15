@@ -212,13 +212,4 @@ function scoreRender(){
 
     scoreDiv.innerHTML = "<img src="+ img +">";
     scoreDiv.innerHTML += "<p>"+ scorePerCent +"%</p>";
-    scoreDiv.innerHTML += "<button>"+ "<a href="#" Style="margin: 0 auto;
-                Display: flex;
-                background: none;
-                height: 35px;
-                width: 170px;
-                border: 2px solid #00e0ff;
-                border-radius: 8px;">"               
-                                    +"</a>"
-                        +"</button>";
 }
