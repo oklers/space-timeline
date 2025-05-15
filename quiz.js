@@ -16,7 +16,6 @@ const scoreDiv = document.getElementById("scoreContainer");
 let questions = [
     {
         question : "В каком году был заложен первый камень в ознаменование строительства города Ленинска?",
-        imgSrc : "img/html.png",
         choiceA : "A)1950",
         choiceB : "B)1955",
         choiceC : "C)1960",
@@ -25,7 +24,6 @@ let questions = [
 
     },{
         question : "Кто родился 6 мая 1966 года?",
-        imgSrc : "img/css.png",
         choiceA : "A)Скворцов Александр Александрович",
         choiceB : "B)Иванов Сергей Петрович",
         choiceC : "C)Петрова Анна Викторовна",
@@ -33,7 +31,6 @@ let questions = [
         correct : "A"
     },{
         question : "В каком году состоялся четвертый регулярный набор космонавтов в отряд Министерства обороны СССР?",
-        imgSrc : "img/css.png",
         choiceA : "A)1965",
         choiceB : "B)1967",
         choiceC : "C)1969",
@@ -41,7 +38,6 @@ let questions = [
         correct : "B"
       },{
         question : "Какой указ подписал президент РФ в 1992 году?",
-        imgSrc : "img/css.png",
         choiceA : "A)О создании Военно-космических сил",
         choiceB : "B)О закрытии космодрома",
         choiceC : "C)О развитии науки",
@@ -49,7 +45,6 @@ let questions = [
         correct : "A"
       },{
         question : "Кто родился 9 мая 1949 года?",
-        imgSrc : "img/css.png",
         choiceA : "A)Атьков Олег Юрьевич",
         choiceB : "B)Гречко Георгий Михайлович",
         choiceC : "C)Леонов Алексей Архипович",
@@ -57,7 +52,6 @@ let questions = [
         correct : "A"
       },{
         question:  "В каком году было подписано Соглашение между АН СССР и NASA?",
-        imgSrc : "img/css.png",
         choiceA : "A)1975",
         choiceB : "B)1977",
         choiceC : "C)1979",
@@ -65,7 +59,6 @@ let questions = [
         correct : "B"
       },{
         question:  "Кто родился 13 мая 1942 года?",
-        imgSrc : "img/css.png",
         choiceA : "A)Джанибеков Владимир Александрович",
         choiceB : "B)Попов Юрий Александрович",
         choiceC : "C)Севастьянов Валерий Андреевич",
@@ -73,7 +66,6 @@ let questions = [
         correct : "A"
       },{
         question:  "В каком году стартовал КК «Союз Т-5»?",
-        imgSrc : "img/css.png",
         choiceA : "A)1980",
         choiceB : "B)1982",
         choiceC : "C)1984",
@@ -81,7 +73,6 @@ let questions = [
         correct : "B"
       },{
         question:  "Какой экипаж стартовал на «Союз-40»?",
-        imgSrc : "img/css.png",
         choiceA : "A)Попов и Прунариу",
         choiceB : "B)Гречко и Непорашов",
         choiceC : "C)Стрекалов и Крикалев",
@@ -89,7 +80,6 @@ let questions = [
         correct : "A"
       },{
         question:  "Кто выполнил первый полёт на ракетном BИ-1?",
-        imgSrc : "img/css.png",
         choiceA : "A)Г.Я. Бахчиванджи",
         choiceB : "B)А.Н. Туполев",
         choiceC : "C)Ю.А. Гагарин",
