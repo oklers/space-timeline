@@ -2,8 +2,162 @@
 [
   {
     "ru": {
-      "title": "1961 — Первый полёт человека в космос",
-      "description": "Юрий Гагарин совершил орбитальный полёт на корабле 'Восток-1'."
+      "title": "25 мая 1931 г.",
+      "description": "Гречко Георгий Михайлович родился 25 мая 1931 года. Дважды Герой Советского Союза, лётчик-космонавт СССР. Совершил три космических полёта, выполнил один выход в открытый космос."
+    },
+    "en": {
+      "title": "1961 — First Human Spaceflight",
+      "description": "Yuri Gagarin completed an orbital flight on the Vostok-1 spacecraft."
+    },
+    "media": "https://upload.wikimedia.org/wikipedia/commons/2/26/Yuri_Gagarin_1961.jpg"
+  },
+  {
+    "ru": {
+      "title": "30 мая 1934 г.",
+      "description": "Леонов Алексей Архипович родился 30 мая 1934 года. Дважды Герой Советского Союза, лётчик-космонавт СССР. Совершил два космических полёта, первый человек, осуществивший выход в открытый космос."
+    },
+    "en": {
+      "title": "1961 — First Human Spaceflight",
+      "description": "Yuri Gagarin completed an orbital flight on the Vostok-1 spacecraft."
+    },
+    "media": "https://upload.wikimedia.org/wikipedia/commons/2/26/Yuri_Gagarin_1961.jpg"
+  },
+  {
+    "ru": {
+      "title": "21 мая 1941 г.",
+      "description": "Левченко Анатолий Семенович родился 21 мая 1941 года. Герой Советского Союза, лётчик-космонавт СССР. Совершил один космический полёт."
+    },
+    "en": {
+      "title": "1961 — First Human Spaceflight",
+      "description": "Yuri Gagarin completed an orbital flight on the Vostok-1 spacecraft."
+    },
+    "media": "https://upload.wikimedia.org/wikipedia/commons/2/26/Yuri_Gagarin_1961.jpg"
+  },
+  {
+    "ru": {
+      "title": "13 мая 1942 г.",
+      "description": "Джанибеков Владимир Александрович родился 13 мая 1942 года. Дважды Герой Советского Союза, лётчик-космонавт СССР. Совершил пять космических полётов, выполнил два выхода в открытый космос."
+    },
+    "en": {
+      "title": "1961 — First Human Spaceflight",
+      "description": "Yuri Gagarin completed an orbital flight on the Vostok-1 spacecraft."
+    },
+    "media": "https://upload.wikimedia.org/wikipedia/commons/2/26/Yuri_Gagarin_1961.jpg"
+  },
+  {
+    "ru": {
+      "title": "15 мая 1942 г.",
+      "description": "Лётчик-испытатель Г.Я. Бахчиванджи выполнил первый в стране полет на ракетном самолете БИ-1 с работающим жидкостным ракетным двигателем (ЖРД). Полёт был произведён с аэропорта «Кольцово» в Свердловске."
+    },
+    "en": {
+      "title": "1961 — First Human Spaceflight",
+      "description": "Yuri Gagarin completed an orbital flight on the Vostok-1 spacecraft."
+    },
+    "media": "https://upload.wikimedia.org/wikipedia/commons/2/26/Yuri_Gagarin_1961.jpg"
+  },
+  {
+    "ru": {
+      "title": "27 мая 1948 г.",
+      "description": "Волков Александр Александрович родился 27 мая 1948 года. Герой Советского Союза, лётчик-космонавт СССР. Совершил три космических полёта, выполнил два выхода в открытый космос."
+    },
+    "en": {
+      "title": "1961 — First Human Spaceflight",
+      "description": "Yuri Gagarin completed an orbital flight on the Vostok-1 spacecraft."
+    },
+    "media": "https://upload.wikimedia.org/wikipedia/commons/2/26/Yuri_Gagarin_1961.jpg"
+  },
+  {
+    "ru": {
+      "title": "09 мая 1949 г.",
+      "description": "Атьков Олег Юрьевич родился 9 мая 1949 года. Герой Советского Союза, лётчик-космонавт СССР. Выполнил один космический полёт."
+    },
+    "en": {
+      "title": "1961 — First Human Spaceflight",
+      "description": "Yuri Gagarin completed an orbital flight on the Vostok-1 spacecraft."
+    },
+    "media": "https://upload.wikimedia.org/wikipedia/commons/2/26/Yuri_Gagarin_1961.jpg"
+  },
+   {
+    "ru": {
+      "title": "05 мя 1955 г.",
+      "description": "Заложен первый камень в ознаменование строительства города Ленинска на космодроме «Байконур»."
+    },
+    "en": {
+      "title": "1961 — First Human Spaceflight",
+      "description": "Yuri Gagarin completed an orbital flight on the Vostok-1 spacecraft."
+    },
+    "media": "https://upload.wikimedia.org/wikipedia/commons/2/26/Yuri_Gagarin_1961.jpg"
+  },
+  {
+    "ru": {
+      "title": "1956 г.",
+      "description": "Калери Александр Юрьевич родился 13 мая 1956 года. Герой России, лётчик-космонавт РФ. Совершил пять космических полётов, выполнил пять выходов в открытый космос."
+    },
+    "en": {
+      "title": "1961 — First Human Spaceflight",
+      "description": "Yuri Gagarin completed an orbital flight on the Vostok-1 spacecraft."
+    },
+    "media": "https://upload.wikimedia.org/wikipedia/commons/2/26/Yuri_Gagarin_1961.jpg"
+  },
+  {
+    "ru": {
+      "title": "22 мая 1959 г.",
+      "description": "Принято постановление правительства о разработке корабля-спутника для полета человека в космос."
+    },
+    "en": {
+      "title": "1961 — First Human Spaceflight",
+      "description": "Yuri Gagarin completed an orbital flight on the Vostok-1 spacecraft."
+    },
+    "media": "https://upload.wikimedia.org/wikipedia/commons/2/26/Yuri_Gagarin_1961.jpg"
+  },
+   {
+    "ru": {
+      "title": "23 мая 1961 г.",
+      "description": "Ю.А. Гагарин назначен на должность командира отряда космонавтов Центра подготовки космонавтов."
+    },
+    "en": {
+      "title": "1961 — First Human Spaceflight",
+      "description": "Yuri Gagarin completed an orbital flight on the Vostok-1 spacecraft."
+    },
+    "media": "https://upload.wikimedia.org/wikipedia/commons/2/26/Yuri_Gagarin_1961.jpg"
+  },
+  {
+    "ru": {
+      "title": "1961 г. - Первый человек в космосе",
+      "description": "Принято постановление правительства о разработке корабля-спутника для полета человека в космос."
+    },
+    "en": {
+      "title": "1961 — First Human Spaceflight",
+      "description": "Yuri Gagarin completed an orbital flight on the Vostok-1 spacecraft."
+    },
+    "media": "https://upload.wikimedia.org/wikipedia/commons/2/26/Yuri_Gagarin_1961.jpg"
+  },
+  {
+    "ru": {
+      "title": " 06 мая 1966 г.",
+      "description": "Скворцов Александр Александрович родился 6 мая 1966 года. Герой России, лётчик–космонавт РФ."
+    },
+    "en": {
+      "title": "1961 — First Human Spaceflight",
+      "description": "Yuri Gagarin completed an orbital flight on the Vostok-1 spacecraft."
+    },
+    "media": "https://upload.wikimedia.org/wikipedia/commons/2/26/Yuri_Gagarin_1961.jpg"
+  },
+  {
+    "ru": {
+      "title": "07 мая 1967 г.",
+      "description": "Состоялся четвертый регулярный набор космонавтов в отряд Министерства обороны СССР."
+    },
+    "en": {
+      "title": "1961 — First Human Spaceflight",
+      "description": "Yuri Gagarin completed an orbital flight on the Vostok-1 spacecraft."
+    },
+    "media": "https://upload.wikimedia.org/wikipedia/commons/2/26/Yuri_Gagarin_1961.jpg"
+  },
+  {
+    "ru": {
+      "title": "1969 г.",
+      "description": "Кондратьев Дмитрий Юрьевич родился 25 мая 1969 года. Летчик-космонавт РФ. Совершил один космический полет, выполнил два выхода в открытый космос."
     },
     "en": {
       "title": "1961 — First Human Spaceflight",
