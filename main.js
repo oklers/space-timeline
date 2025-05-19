@@ -39,13 +39,5 @@ function startAutoScroll(container) {
   }, 50);
 }
 
-document.getElementById("scroll-left").addEventListener("click", () => {
-  const container = document.getElementById("timeline");
-  container.scrollBy({ left: -300, behavior: "smooth" });
-});
-document.getElementById("scroll-right").addEventListener("click", () => {
-  const container = document.getElementById("timeline");
-  container.scrollBy({ left: 300, behavior: "smooth" });
-});
 
 loadEvents();
