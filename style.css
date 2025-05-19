@@ -15,12 +15,11 @@ h1 {
 .timeline {
   display: flex;
   overflow-x: scroll;
-  scroll-snap-type: x mandatory;
   padding: 2rem;
 }
 .event {
   min-width: 300px;
-  margin: 0 1rem;
+  margin: 150px 1rem;
   background: rgba(255, 255, 255, 0.05);
   border-left: 3px solid #00e0ff;
   padding: 1rem;
